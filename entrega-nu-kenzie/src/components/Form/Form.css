@@ -1,0 +1,113 @@
+.main-form{
+    display: flex;
+    flex-direction: column;
+    width: 363px;
+    height: 351px;
+    gap: 15px;
+    border: solid 2px #E9ECEF;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 39px;
+    margin-left: 258px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.inputDescription{
+    width: 314px;
+    height: 52.8px;
+    font-size: 16px;
+    background-color: #F8F9FA;
+    border: none;
+    border-radius: 8px;
+}
+
+.inputDescription::placeholder{
+    font-size: 16px;
+    color: #868E96;    
+}
+
+.description label{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #212529;
+}
+
+.description span{
+    color: #868E96;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.form-data{
+    display: flex;
+    gap: 36px;
+}
+
+.form-data label{
+    color: #212529;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.money-value{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.money-value input{
+    width: 128px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F8F9FA;
+}
+
+.type-value{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.type-value select{
+    width: 150px;
+    height: 54.25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F8F9FA;
+}
+
+.btn-inserir{
+    width: 322px;
+    height: 48px;
+    margin-top: 10px;
+    background-color: #FD377E;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+@media (max-width:391px){
+    .main-form{
+        gap: 30px;
+        margin-top: 19px;
+        margin-left: 100px;
+    }
+}

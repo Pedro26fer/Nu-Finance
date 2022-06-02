@@ -48,7 +48,15 @@
     background-color:#E9ECEF;
     margin-top: 16.5px;
     margin-right: 23px;
+    cursor: pointer;
 }
+
+.card-value img:hover{
+    width: 16px;
+    height: 16px;
+}
+
+
 
 
 @media(max-width:450px){

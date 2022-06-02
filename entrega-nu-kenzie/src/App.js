@@ -6,7 +6,8 @@ import List from './List';
 
 function App() {
   
-  const [listTransactions,setListTransaction] = useState([])
+  const [listTransactions,setListTransactions] = useState([])
+  const [itensFiltered,setItensFiltered] = useState([])
 
 
   return (
@@ -17,11 +18,11 @@ function App() {
       </header>
       <main className='main-page'>
         <article>
-          <Form listTransactions={listTransactions} setListTransactions={setListTransaction}/>
+          <Form listTransactions={listTransactions} setListTransactions={setListTransactions}/>
           <TotalMoney listTransactions={listTransactions}/>
         </article>
         <article className='list'>
-          <List listTransactions={listTransactions} setListTransactions={setListTransaction}/>
+          <List listTransactions={itensFiltered.length === 0? listTransactions : itensFiltered} setListTransactions={setListTransactions} setItensFiltered={setItensFiltered}/>
         </article>
       </main>
     </div>

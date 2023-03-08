@@ -4,7 +4,7 @@ export const Header = () => {
     return (
         
         <HeaderStyled>
-            <h1>Nu Kenzie</h1>
+            <h1>Nu Finances</h1>
             <button>Inicio</button>
         </HeaderStyled>
     )

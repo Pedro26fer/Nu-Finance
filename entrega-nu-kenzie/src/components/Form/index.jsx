@@ -1,15 +1,14 @@
 import { useState } from 'react'
-import './Form.css'
+import { FormStyled } from './style'
 
 function Form({listTransactions,setListTransactions}){
 
     const [descriptionInput,setDescriptionIput] = useState('')
-    const [valueInput,setValueInput] = useState(0)
-    const [typeSelected,setTypeSelected] = useState('Entrada')
+    const [valueInput,setValueInput] = useState('')
+    const [typeSelected,setTypeSelected] = useState('--')
     const [id,setId] = useState(1)
 
-    const handleTransactions = (description,value,type) => {
-
+    const handleTransactions = () => {
         const newTransaction = {}
 
         newTransaction.description = descriptionInput
@@ -20,22 +19,24 @@ function Form({listTransactions,setListTransactions}){
         setListTransactions([...listTransactions,newTransaction])
         setId(id+1)
 
-
+        setDescriptionIput('')
+        setValueInput('')
+        setTypeSelected('--')
     }
 
     return(
-        <form className='main-form' onSubmit={(e) => e.preventDefault()}>
+        <FormStyled onSubmit={(e) => e.preventDefault()}>
             <div className='description'>
-            <label>Descrição</label>
-            <input className='inputDescription' type="text" placeholder="Digite aqui sua descrição" value={descriptionInput} onChange={(evt) => setDescriptionIput(evt.target.value) }/>
-            <span>Exemplo: Compra de roupas</span>
+                <label>Descrição</label>
+                <input className='inputDescription' type="text" placeholder="Digite aqui sua descrição" value={descriptionInput} onChange={(evt) => setDescriptionIput(evt.target.value) }/>
+                <span>Exemplo: Compra de roupas</span>
             </div>
             <div className='form-data'>
                 <div className='money-value'>
-                <label>Valor</label>
-                <input type = 'number' placeholder="R$ 00,00" value={valueInput} onChange={(evt) =>setValueInput(evt.target.value)}/>
+                    <label>Valor</label>
+                    <input type = 'number' placeholder="R$ 00,00" value={valueInput}  onChange={(evt) =>setValueInput(evt.target.value)}/>
                 </div>
-                <div className='type-value'>
+                <div>
                     <label>Tipo  de valor</label>
                     
                     <select 
@@ -48,13 +49,14 @@ function Form({listTransactions,setListTransactions}){
 
                         }}
                     >
+                            <option value='selecione'>--</option>
                             <option value='Entrada'>Entrada</option>
                             <option value='Saída'>Saída</option>
                     </select>
                 </div>
             </div>
-                <button className='btn-inserir' onClick={() => handleTransactions(descriptionInput,typeSelected,valueInput)}>Inserir valor</button>
-        </form>
+                <button onClick={() => handleTransactions()}>Inserir valor</button>
+        </FormStyled>
     )
 }
 

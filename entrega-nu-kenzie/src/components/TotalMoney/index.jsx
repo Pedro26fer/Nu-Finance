@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './TotalMoney.css'
 
-function TotalMoney({filter,listTransactions}){
+function TotalMoney({listTransactions}){
     const [sumValues,setSumValues] = useState(0)
 
    useEffect(()=>{

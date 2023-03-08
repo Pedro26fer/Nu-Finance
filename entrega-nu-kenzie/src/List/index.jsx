@@ -1,18 +1,15 @@
 import Card from "../components/Card"
 import './List.css'
-function List({listTransactions,setListTransactions,setItensFiltered}){
-    console.log(listTransactions)
-    //const [filter,setFilter] = useState(listTransactions)
+function List({apiListTransaction,listTransactions,setListTransactions,setItensFiltered}){
 
     const Filter = ()=>{
-       const filtered = listTransactions.filter((item) => item.type === 'Entrada')
+       const filtered = apiListTransaction.filter((item) => item.type === 'Entrada')
        setItensFiltered(filtered)
     }
 
     const FilterOut = () => {
-        const outs = listTransactions.filter((item) => item.type === 'Saída')
+        const outs = apiListTransaction.filter((item) => item.type === 'Saída')
         setItensFiltered(outs)
-        console.log(outs)
     }
 
     const FilterAll = ()=>{

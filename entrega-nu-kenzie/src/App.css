@@ -12,39 +12,6 @@ body{
 }
 
 
-
-.App-header {
-  background-color: #F8F9FA;
-  min-height: 88px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-header h1{
-  background-image: linear-gradient(90deg, #FD377E 28.84%, #212529 29.25%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 35px;
-}
-
-.App-header button{
-  border: none;
-  border-radius: 8px;
-  background-color: #E9ECEF;
-  font-size: 14px;
-  width: 64px;
-  height: 40px;
-  padding: 10px;
-  text-align: center;
-  margin-top: 10px;
-  margin-right: 3%;
-}
-
 .main-page{
   display: flex;
   justify-content: center;

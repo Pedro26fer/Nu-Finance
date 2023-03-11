@@ -21,7 +21,7 @@ function Form({listTransactions,setListTransactions}){
 
         setDescriptionIput('')
         setValueInput('')
-        setTypeSelected('--')
+
     }
 
     return(

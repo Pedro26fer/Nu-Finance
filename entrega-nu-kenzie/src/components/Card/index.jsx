@@ -1,6 +1,12 @@
 import './Card.css'
+import { BsFillTrashFill } from "react-icons/bs"
+import { CardStyled } from './style'
+
+
 function Card({description,value,type,listTransactions,setListTransactions,transaction}){
     
+    const numberValue = parseFloat(value)
+
     function del(){
        const arr = listTransactions.filter((item)=> item !== transaction)
        setListTransactions(arr)
@@ -9,17 +15,17 @@ function Card({description,value,type,listTransactions,setListTransactions,trans
 
     return(
         
-        <div className={`card ${type}`}>
+        <CardStyled type={type}>
             <div className='card-description'>
                 <h1>{description}</h1>
-                <p>{type}</p>
+                <BsFillTrashFill onClick={() => del()}/>
             </div>
 
             <div className='card-value'>
-                <span>R${value}</span>
-                <img onClick={del} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ieSgwXUfxCAl2vvrj65-v-qYNJ6i1BNO9g&usqp=CAU" alt="Excluir" />
+                <p>{type}</p>
+                <span>{numberValue.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</span>
             </div>
-        </div>
+        </CardStyled>
         
     
     )

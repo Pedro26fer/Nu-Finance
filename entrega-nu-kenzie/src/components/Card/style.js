@@ -29,6 +29,13 @@ export const CardStyled = styled.div`
         span{
             font-weight: 600;
         }
+
+        .trash{
+            :hover{
+                cursor: pointer;
+                color: #ff8319;
+            }
+        }
     }
 
 `

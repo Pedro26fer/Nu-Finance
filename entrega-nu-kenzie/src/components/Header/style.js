@@ -9,7 +9,7 @@ export const HeaderStyled = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 50%;
+  gap: 60%;
   font-size: calc(10px + 2vmin);
 
   h1{

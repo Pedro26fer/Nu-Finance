@@ -1,4 +1,3 @@
-import './Card.css'
 import { BsFillTrashFill } from "react-icons/bs"
 import { CardStyled } from './style'
 
@@ -18,7 +17,7 @@ function Card({description,value,type,listTransactions,setListTransactions,trans
         <CardStyled type={type}>
             <div className='card-description'>
                 <h1>{description}</h1>
-                <BsFillTrashFill onClick={() => del()}/>
+                <BsFillTrashFill className="trash" onClick={() => del()}/>
             </div>
 
             <div className='card-value'>

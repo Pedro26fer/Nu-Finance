@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import './TotalMoney.css'
+import { TotalValue } from './style'
+
 
 function TotalMoney({listTransactions}){
     const [sumValues,setSumValues] = useState(0)
@@ -27,7 +28,7 @@ function TotalMoney({listTransactions}){
 
     return (
         <>
-            <div className="total-value">
+            <TotalValue>
                 <div className='value'>
                 <h1>Valor Total:</h1>
                 <p>{sumValues.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
@@ -36,7 +37,7 @@ function TotalMoney({listTransactions}){
                 <div className='warning-value'>
                 <span>O valor se refere ao saldo</span>
                 </div>
-            </div>
+            </TotalValue>
                     
         </>
     )

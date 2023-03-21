@@ -1,6 +1,7 @@
 
-import './List.css'
+// import './List.css'
 import Card from '../Card'
+import { ConteinerList, MenuList, TransactionsList } from './style'
 function List({apiListTransaction,listTransactions,setListTransactions,setItensFiltered}){
 
     const Filter = ()=>{
@@ -21,16 +22,16 @@ function List({apiListTransaction,listTransactions,setListTransactions,setItensF
 
         
     return(
-        <div className="conteiner-list">
-            <article className="menu-list">
+        <ConteinerList>
+            <MenuList>
                 <h2>Resumo Financeiro</h2>
                 <ul>
                     <li onClick={FilterAll} >Todos</li>
                     <li onClick={Filter} >Entrada</li>
                     <li onClick={FilterOut}>Saída</li>
                 </ul>
-            </article>
-            <article className="main-list">
+            </MenuList>
+            <TransactionsList>
             <ul>
             {listTransactions.map((transaction, index)=> (
                 <li key={index}>
@@ -38,8 +39,8 @@ function List({apiListTransaction,listTransactions,setListTransactions,setItensF
                 </li>
             ))}
             </ul>
-            </article>
-        </div>
+            </TransactionsList>
+        </ConteinerList>
     )
 }
 

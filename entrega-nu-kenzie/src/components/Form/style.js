@@ -96,6 +96,9 @@ export const FormStyled = styled.form`
             box-sizing: border-box;
             padding-left: 5%;
 
+            font-size: .8rem;
+            font-family: sans-serif;
+
             ::placeholder{
                 padding-left: 5%;
             }
@@ -108,6 +111,10 @@ export const FormStyled = styled.form`
             border-radius: 8px;
             background-color: #F8F9FA;
             padding-left: 5%;
+
+            option{
+                font-family: sans-serif;
+            }
 
             :focus{
                 outline-style: solid;

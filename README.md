@@ -13,5 +13,9 @@ expenses for each month. Initially, the user will have to inform his earnings an
 
 ![divina beleza (1)](https://user-images.githubusercontent.com/98784118/227054222-c80a71a2-bf3d-4420-b5ba-f1ce6299f272.gif)
 
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge](https://img.shields.io/badge/status-in%20progress-brightgreen)"/>
+</p>
+
 
 

@@ -30,6 +30,20 @@ expenses for each month. Initially, the user will have to inform his earnings an
 <p> O projeto foi construído em react, e enquanto não se tem um servidor pronto, o front-end da aplicação é executado rodando <i>npm start</i> no terminal da sua IDE.</p>
 
 
+--------
+
+
+# :heavy_check_mark: Teacnologias utilizadas até o momento
+
+- React-js
+- Styled-Components
+- Node-Js
+- express
+- PostgreSQL
+
+----------
+
+
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge](https://img.shields.io/badge/status-in%20progress-brightgreen)"/>
 </p>

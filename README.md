@@ -23,6 +23,13 @@ expenses for each month. Initially, the user will have to inform his earnings an
 ![Demonstração da aplicação](https://user-images.githubusercontent.com/98784118/227061289-ca298041-7ff0-4e20-b050-670491e44967.gif)
 
 
+------------
+
+# :hammer_and_pick: Como rodar o projeto
+
+<p> O projeto foi construído em react, e enquanto não se tem um servidor pronto, o front-end da aplicação é executado rodando <i>npm start</i> no terminal da sua IDE.</p>
+
+
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge](https://img.shields.io/badge/status-in%20progress-brightgreen)"/>
 </p>

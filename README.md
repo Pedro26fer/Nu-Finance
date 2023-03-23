@@ -51,6 +51,6 @@ expenses for each month. Initially, the user will have to inform his earnings an
 
 # Autor
 
-<img src="https://avatars.githubusercontent.com/u/98784118?s=96&v=4" width=115><br><sub>Pedro Henrique Fernandes de Andrades</sub> (https://github.com/Pedro26fer)
+<img src="https://avatars.githubusercontent.com/u/98784118?v=4" width=115><br><sub>Pedro Henrique Fernandes de Andrades</sub> (https://github.com/Pedro26fer)
 
 

@@ -20,7 +20,8 @@ expenses for each month. Initially, the user will have to inform his earnings an
 # :hammer: Funcionalidades do projeto até o momento
 
 
-![Demonstração da aplicação](https://user-images.githubusercontent.com/98784118/227061289-ca298041-7ff0-4e20-b050-670491e44967.gif)
+![Demonstração (1)](https://user-images.githubusercontent.com/98784118/227323890-3041c900-c8a4-4235-a559-b6f7e013edc8.gif)
+
 
 
 ------------

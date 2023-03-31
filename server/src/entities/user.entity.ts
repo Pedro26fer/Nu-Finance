@@ -32,11 +32,11 @@ export class User{
     updatedAt: Date
 
 
-    @OneToMany((type) => Accounts, account => account.id, {eager: true})
+    @OneToMany((type) => Accounts, account => account.user, {eager: true})
     accounts: Accounts[]
 
 
-    @OneToMany(() => Transactions, transaction => transaction.id, {eager: true})
+    @OneToMany(() => Transactions, transaction => transaction.user, {eager: true})
     transactions: Transactions[]    
 
 

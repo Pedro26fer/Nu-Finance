@@ -20,11 +20,11 @@ export class Accounts{
     number: string
 
 
-    @ManyToOne( type => User, user => user.id, {eager: true})
+    @ManyToOne( type => User, user => user.accounts)
     user: User
 
 
-    @OneToMany(() => Transactions, transaction => transaction.id, {eager: true})
+    @OneToMany(() => Transactions, transaction => transaction.account, {eager: true})
     transactions: Transactions[]
 
 

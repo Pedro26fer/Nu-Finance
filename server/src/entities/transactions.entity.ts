@@ -24,11 +24,11 @@ export class Transactions{
     value: number
 
 
-    @ManyToOne(type => Accounts, account => account.id, {eager: true})
+    @ManyToOne(type => Accounts, account => account.transactions)
     account: Accounts
 
 
-    @ManyToOne(type => User, user => user.id, {eager: true})
+    @ManyToOne(type => User, user => user.transactions)
     user: User
 
 

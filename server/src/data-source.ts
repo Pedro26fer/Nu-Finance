@@ -3,7 +3,7 @@ require("dotenv").config();
 import { User } from "./entities/user.entity";
 import { Accounts } from "./entities/accounts.entity";
 import { Transactions } from "./entities/transactions.entity";
-import {createTables1680141828119} from "./migrations/1680141828119-createTables"
+import {lastMigration1680230505184} from "./migrations/1680230505184-lastMigration"
 
 
 
@@ -19,7 +19,7 @@ const AppDataSource = new DataSource({
   logging: true,
 
   entities: [User, Accounts, Transactions],
-  migrations: [createTables1680141828119]
+  migrations: [lastMigration1680230505184]
   
 });
 

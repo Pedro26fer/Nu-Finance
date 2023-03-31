@@ -3,5 +3,7 @@ export interface IUserSignUp {
     email: string,
     password: string
 }
-
-
+ export interface IUserSignIn {
+    email: string,
+    password: string
+ }

@@ -4,6 +4,7 @@ import { signUpRoute } from './routes/sigupUser.routes'
 import { globalErrorMiddleware } from './middlewares/globalError.middleware'
 import { signInUserRoute } from './routes/signInUser.routes'
 import { registerAccountRoute } from './routes/registerAccount.routes'
+import { addTransactionRoute } from './routes/addTransaction.routes'
 
 
 
@@ -20,6 +21,7 @@ app.use(cors())
 signUpRoute(app)
 signInUserRoute(app)
 registerAccountRoute(app)
+addTransactionRoute(app)
 
 export default app
 

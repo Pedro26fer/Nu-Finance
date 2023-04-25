@@ -1,10 +1,11 @@
 import express from 'express'
 import cors from 'cors'
-import { signUpRoute } from './routes/sigupUser.routes'
+import { userRoutes } from './routes/userRoutes.routes'
 import { globalErrorMiddleware } from './middlewares/globalError.middleware'
-import { signInUserRoute } from './routes/signInUser.routes'
-import { registerAccountRoute } from './routes/registerAccount.routes'
-import { addTransactionRoute } from './routes/addTransaction.routes'
+import { accountsRoutes } from './routes/accountsRoutes.routes'
+import { transactionsRoute } from './routes/transactionsRoute.routes'
+import { sessionRoutes } from './routes/sessionRoute.routes'
+
 
 
 
@@ -18,10 +19,11 @@ app.use(globalErrorMiddleware)
 app.use(cors())
 
 
-signUpRoute(app)
-signInUserRoute(app)
-registerAccountRoute(app)
-addTransactionRoute(app)
+userRoutes(app)
+sessionRoutes(app)
+accountsRoutes(app)
+transactionsRoute(app)
+
 
 export default app
 

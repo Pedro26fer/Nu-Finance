@@ -28,9 +28,6 @@ export class Transactions{
     account: Accounts
 
 
-    @ManyToOne(type => User, user => user.transactions)
-    user: User
-
 
     constructor(){
         if(!this.id){

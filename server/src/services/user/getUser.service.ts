@@ -4,7 +4,19 @@ import { AppError } from "../../error/appError";
 
 const getUsersService = async (userEmail: string) => {
     const userRepository = AppDataSource.getRepository(User)
-    const userRetrived = await userRepository.findOne({where:{email: userEmail}})
+    const userRetrived = await userRepository.findOne({
+        select:{
+            id:true,
+            name:true,
+            email: true,
+            createdAt: true,
+        },
+        
+        where:{
+            email: userEmail
+        }
+    })
+
     if(!userRetrived){
         throw new AppError(404,"Users not found")
     }

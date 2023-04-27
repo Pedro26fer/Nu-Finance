@@ -24,7 +24,7 @@ export class Accounts{
     user: User
 
 
-    @OneToMany(() => Transactions, transaction => transaction.account, {eager: true})
+    @OneToMany(() => Transactions, transaction => transaction.account, {eager:true})
     transactions: Transactions[]
 
 

@@ -36,10 +36,6 @@ export class User{
     accounts: Accounts[]
 
 
-    @OneToMany(() => Transactions, transaction => transaction.user, {eager: true})
-    transactions: Transactions[]    
-
-
 
 
     constructor(){

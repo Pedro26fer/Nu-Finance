@@ -41,7 +41,7 @@ expenses for each month. Initially, the user will have to inform his earnings an
 - Node-Js
 - express
 - PostgreSQL
-- TyperORM
+- TypeORM
 
 ----------
 

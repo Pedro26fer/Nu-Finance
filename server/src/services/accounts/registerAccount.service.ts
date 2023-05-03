@@ -23,10 +23,30 @@ const registerAccountService = async ({name,number,userEmail}: IAccountRegister)
         throw new AppError(403, "This account was already registering")
     }
 
-    const newAccount = await accountsRepository.save({
+    await accountsRepository.save({
         name,
         number,
         user: userOwner
+    })
+
+    const newAccount = await accountsRepository.find({
+        select:{
+            id:true,
+            name:true,
+            number:true ,
+            user: {
+                name:true,
+                email:true,
+            }           
+        },
+        relations:{
+            user:true
+        },
+        where:{
+            number: number
+        }
+        
+
     })
 
     return newAccount

@@ -36,6 +36,10 @@ export class User{
     accounts: Accounts[]
 
 
+    @OneToMany(type => Transactions, transactions => transactions.user, {eager:true})
+    transactions: Transactions[]
+
+
 
 
     constructor(){

@@ -27,6 +27,7 @@ const addTransactionService = async ({description,type,value,account,userEmail}:
         account: accountAvaible,
         user: userAvaible
     })
+    
 
     return newTransaction    
 

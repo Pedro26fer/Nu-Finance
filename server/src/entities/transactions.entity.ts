@@ -27,6 +27,9 @@ export class Transactions{
     @ManyToOne(type => Accounts, account => account.transactions)
     account: Accounts
 
+    @ManyToOne(type => User, user => user.transactions)
+    user: User
+
 
 
     constructor(){

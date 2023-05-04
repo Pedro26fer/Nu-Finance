@@ -24,10 +24,10 @@ export class Transactions{
     value: number
 
 
-    @ManyToOne(type => Accounts, account => account.transactions)
+    @ManyToOne(type => Accounts, account => account.transactions, {onDelete: "CASCADE"})
     account: Accounts
 
-    @ManyToOne(type => User, user => user.transactions)
+    @ManyToOne(type => User, user => user.transactions, {onDelete: "CASCADE"})
     user: User
 
 

@@ -20,7 +20,7 @@ export class Accounts{
     number: string
 
 
-    @ManyToOne( type => User, user => user.accounts)
+    @ManyToOne( type => User, user => user.accounts, {onDelete: "CASCADE"})
     user: User
 
 

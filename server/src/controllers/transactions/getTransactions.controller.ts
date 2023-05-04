@@ -9,7 +9,7 @@ const getTransactionsController = async (req: Request, res: Response) => {
     return res.json(transactions);
   } catch (error) {
     if (error instanceof AppError) {
-      handleError(error, res);
+      handleError(error, res)
     }
   }
 };

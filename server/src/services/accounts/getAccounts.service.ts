@@ -18,6 +18,7 @@ const getAccountService = async (userEmail : string) => {
 
     const accounts = await accountRepository.find({
         select:{
+            id:true,
             name:true,
             number: true,
             transactions: true

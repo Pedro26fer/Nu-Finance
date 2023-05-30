@@ -39,9 +39,6 @@ expenses for each month. Initially, the user will have to inform his earnings an
 - React-js
 - Styled-Components
 - Node-Js
-- express
-- PostgreSQL
-- TypeORM
 
 ----------
 
